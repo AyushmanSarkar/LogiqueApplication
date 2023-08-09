@@ -1,0 +1,2 @@
+### LogiqueApplication
+average app
