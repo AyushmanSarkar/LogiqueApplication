@@ -24,7 +24,7 @@
                     android:layout_height="45dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_profile1" />
+                    android:src="@drawable/ic_profile2" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="Bhavish Aggarwal"
+                        android:text="Gautam Adani"
                         android:textSize="17sp" />
 
                     <TextView
@@ -67,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="Designoweb technologies"
+                    android:text="Adani group"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -80,8 +80,8 @@
                     android:layout_marginTop="0dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/designoweb"
-                    android:text=""/>
+                    android:src="@drawable/adani"
+                    android:text="" />
 
             </LinearLayout>
         </LinearLayout>
@@ -93,16 +93,47 @@
             android:layout_alignParentBottom="true"
             android:layout_margin="15dp"
             android:layout_marginTop="0dp">
+
+
+                <Button
+                    android:id="@+id/btnB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins_black"
+                    android:layout_weight="1"
+                    android:text="Back"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/blue_800"/>
+
+                <Button
+                    android:id="@+id/btnN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins_black"
+                    android:layout_weight="1"
+                    android:text="Next"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/blue_800"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center">
+
             <Button
-                android:id="@+id/btnN"
+                android:id="@+id/proceedHelpDesk"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:fontFamily="@font/poppins_black"
-                android:layout_weight="1"
-                android:text="Next"
-                android:layout_margin="5dp">
-            </Button>
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/blue_900"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Proceed"
+                android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

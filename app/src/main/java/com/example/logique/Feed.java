@@ -22,25 +22,15 @@ public class Feed extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotourl("https://en.wikipedia.org/wiki/Mukesh_Ambani%22");
+                gotourl("https://en.wikipedia.org/wiki/Gautam_Adani%22");
             }
         });
 
-
-        Button b;
-        ImageView prof;
-        TextView t;
-        b = findViewById(R.id.btnN);
-        prof = findViewById(R.id.img_viewProfPic2);
-        t = findViewById(R.id.textProf);
+        Button b = findViewById(R.id.proceedHelpDesk);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                btn.setBackgroundResource(R.drawable.adani);
-
-                prof.setImageResource(R.drawable.ic_profile2);
-                t.setText("Gautam Adani");
-            }
+            public void onClick(View view) {
+                startActivity(new Intent(Feed.this, HelpDesk.class));}
         });
     }
     private void gotourl(String s) {
