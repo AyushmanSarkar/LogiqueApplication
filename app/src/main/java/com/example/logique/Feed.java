@@ -66,8 +66,6 @@ public class Feed extends AppCompatActivity {
             }
         });
 
-
-
     }
     private void gotourl(String s) {
         Uri uri=Uri.parse(s);
