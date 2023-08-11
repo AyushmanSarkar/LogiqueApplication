@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.appcompat.app.ActionBar;
 import android.view.View;
 import android.widget.*;
 
@@ -20,6 +21,8 @@ public class Login extends AppCompatActivity {
 
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_login);
+            ActionBar ab = getSupportActionBar();
+            ab.hide();
 
             username = findViewById(R.id.username);
             password = findViewById(R.id.password);
